@@ -1,0 +1,42 @@
+{
+  "aprobadores": [
+    {
+      "licitacion_id": 7835,
+      "nombre": "María Gómez",
+      "rol": "Ordenador del gasto",
+      "cargo": "Secretaria de Salud",
+      "entidad": "Secretaría de Salud de X",
+      "tipo_actor": "publico",
+      "identificacion": "CC-12345678",
+      "correo": "maria.gomez@salud-x.gov.co"
+    }
+  ],
+  "personas": [
+    {
+      "id": "OF-001",
+      "nombre": "María Gómez",
+      "ent_publica": true,
+      "entidad": "Secretaría de Salud de X",
+      "es_contratista": false,
+      "trabajos": [
+        {"cargo": "Profesional Especializado", "entidad": "Secretaría de Salud de X", "anio_inicio": 2019, "anio_fin": 2025, "descripcion": "Ordenadora del gasto"}
+      ],
+      "conexiones": [
+        {"con_id": "C-101", "con_nombre": "Juan Pérez", "tipo": "colegas_previos", "fuente": "LinkedIn"}
+      ]
+    },
+    {
+      "id": "C-101",
+      "nombre": "Juan Pérez",
+      "ent_publica": false,
+      "entidad": "Proveedor ABC S.A.S.",
+      "es_contratista": true,
+      "trabajos": [
+        {"cargo": "Analista", "entidad": "Proveedor XYZ S.A.S.", "anio_inicio": 2021, "anio_fin": 2022, "descripcion": "Apoyo en propuestas"}
+      ],
+      "conexiones": [
+        {"con_id": "OF-001", "con_nombre": "María Gómez", "tipo": "colegas_previos", "fuente": "LinkedIn"}
+      ]
+    }
+  ]
+}
